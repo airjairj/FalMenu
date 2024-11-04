@@ -1,6 +1,9 @@
 # FalMenu
 A simple customizable mod menu for any game.
 
+## Version 0.1
+- Only 1 variable can be edited for the moment
+
 ## Instructions
 1) Open CheatEngine
 2) Find an address for a target variable
