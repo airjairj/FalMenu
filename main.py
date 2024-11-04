@@ -43,7 +43,7 @@ try:
         if choice == '1':
             config["process_name"] = input("Enter the process name: ")
             config["base_address"] = int(input("Enter the base address: "), 16)
-            config["offset"] = int(input("Enter the offset: "), 16)
+            config["base_offset"] = int(input("Enter the base offset: "), 16)
             config["offsets"] = [int(offset, 16) for offset in input("Enter the offsets (with 0x) separated by a space: ").split()]
             filename = input("Enter the filename to save the config to: ")
             save_config(config, filename)
@@ -61,12 +61,8 @@ try:
 
             # Base Address
             # process name + offest
-            preferreImageBase = int(input("Enter the base address: "), 16)
-            baseOffset = int(input("Enter offset: "), 16)
-            base_address = preferreImageBase + baseOffset
-
             preferreImageBase = config['base_address']
-            baseOffset = config['offset']
+            baseOffset = config['base_offset']
             base_address = preferreImageBase + baseOffset
 
             # Pointer
