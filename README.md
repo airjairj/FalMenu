@@ -1,5 +1,5 @@
 # FalMenu
-A simple customizable mod menu for every SINGLEPLAYER game.
+A simple customizable mod menu for any game.
 
 ## Instructions
 1) Open CheatEngine
